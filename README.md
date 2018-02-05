@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # cc_jec
 // Go to cc_jec/cc_jec directory. It is project directory
 
@@ -19,3 +20,6 @@ $ python manage.py runserver
 
 // copy the server address(e.g - http://127.0.0.1:8000/) and paste it to browser.
 
+=======
+# curiosity_club
+>>>>>>> 2c8ef84c750f66659571ca504581e9c1cea7459d
