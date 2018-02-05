@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html>
+<head>
+  <title>About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+  <style>
+  body {
+      position: relative;
+  }
+
+h1 {
+
+   font-weight: normal;
+   font-style: normal;
+}
+
+.sec1{
+width:325px;
+margin-left:1300px;
+margin-top: -525px;
+
+}
+
+.sec2{
+  width:1500px;
+  margin-top: 200px;
+  margin-left: 150px;
+
+
+}
+  #section1 {padding-top:50px;height:500px; background-color: solid-white;}
+  #section2 {padding-top:50px;height:925px; background-color: solid-white;}
+  #content1{
+    font-size:140%;
+    color: #7E7A79;
+  }
+  #content2{
+    font-size:140%;
+    color: #7E7A79;
+  }
+
+
+  .btn-primary {
+    padding: 12px 29px;
+    margin-top: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.img1{
+
+  margin-left: 150px;
+  margin-top: 80px;
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" >
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{%url 'c_app:front_page'%}">HOME</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Organizational Structure</a></li>
+          <li><a href="#section2">Activities</a></li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid">
+<div class="img1">
+  <img src="{%static 'images/cc.png'%}" height="500" width="1000">
+
+
+</div>
+<div class="sec1">
+  <h1>Organizational Structure</h1>
+   <br>
+     <p id="content2" align="justify">The club is currently headed by 4 Coordinators, who are Pre-Final year Undergraduate students.The coordinators serve a tenure of 1 year and are responsible for the conduction of all the activities as well as managing the finances. They often take lectures for the benefit of the students.
+      20-25 Secretaries work with the Coordinators to assist in the working of the club. They are responsible for the publicity of the events, contributing the questions in . Usually, the secretaries are Undergraduate Sophomores.</p>
+
+      <a href="{%url 'c_app:member_page'%}">
+        <div class="col-md-12 text-center">
+      <button type="button" class="btn btn-primary">members</button>
+      </div></a>
+</div>
+</div>
+<div id="section2" class="container-fluid">
+<div class="sec2">
+
+
+  <h1>Activities</h1>
+  <br>
+
+  <p id ="content2" align="justify">The Programming Club holds regular lectures across diverse fields such as algorithms, web development, and app development. The lectures often involve live demos on programming and development.
+      The club often develops and deploys applications for the campus junta. For instance, Puppy Love is a couple matching platform used during the Valentines week.The Club organizes a summer camp every year during the academic summer break. This 40 day long camp offers multiple projects to students who have finished their freshman year, and wish to learn more about Programming through practical projects. These projects are mentored by senior students, and are overseen by the Coordinators. In addition to this, the summer camp also involves various lectures and internal contests for the learning and benefit of the people on campus during the summers. Projects done in the past have been very successful and have received much attention.
+      The club, apart from learning opportunities, also conducts various competitions for the students, to provide them a platform to test their knowledge in a comptive environment. The various contests are described in a separate section. Contests
+      This contest is organized right in the beginning of the first semester, soon after the first introductory lecture and introductory workshop. It consists of various basic algorithmic and programming tasks, very similar in pattern to online contests, but of a much simpler level. This helps recognize people who are already skilled at programming, to ensure that they get the requisite attention. But not just this, this also helps people new to programming to begin foraying into competitive programming.This fresher-only contest is conducted as a part of Helix, the inter-hall JEC contest. It involves two stages, beginning with a stage having maths and logic questions; followed by the final stage. The final stage involves programming in an unknown esoteric programming language, which is provided (with the compiler and documentation) at the beginning of the contest. The students have to write certain programs in this new language within the time constraints
+      This a contest on competitive programming, again a part of Helix, and involves residents of halls collaborating to write solutions to algorithmic problems while competing with the other halls.The club organizes a couple of Weekend Programming Contests every year for jecians, with prizes for top performers to encourage participation. The contests are algorithmic in nature
+      The Programming club has, in its possession, a wide array of gadgets and tools which are used for conducting projects. Some of them are: Microsoft Kinect, Raspbery Pi 2, Raspberry Pi 3, LeapMotion device, Google Nexus 5, Google Cardboard etc.
+</p>
+
+</div>
+</div>
+<div class="container-fluid bg-grey">
+<h2 class="text-center">CONTACT</h2>
+<div class="row">
+  <div class="text-center">
+    <p>Contact us and we'll get back to you within 24 hours.</p>
+    <p><span class="glyphicon glyphicon-map-marker"></span> CURIOSITY CLUB</p>
+    <p><span class="glyphicon glyphicon-phone"></span> +00 0000</p>
+    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+  </div>
+
+
+    </div>
+  </div>
+
+
+
+</body>
+</html>
